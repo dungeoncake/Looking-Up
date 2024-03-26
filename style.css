@@ -1,0 +1,1395 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+/*  border: 1px solid black; */
+}
+
+#landing-wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.site-wrapper {
+    width: 100vw;
+    height: 8640px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#welcometxt {
+    position: relative;
+    margin: 25% 0% 0% 20%;
+    font-size: 6rem;
+    color: antiquewhite;
+    transition: color 0.3s ease-in-out;
+}
+
+#welcometxt:hover {
+    color: purple;
+}
+
+#hole-inner {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(99, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.egress {
+    position: absolute;
+    color: rgb(48, 22, 22);
+    top: 5%;
+    left: 3%;
+    transform: rotate(-45deg);
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.opening {
+    position: absolute;
+    width: 80vw;
+    height: 160vh;
+    border-radius: 50%;
+    background-image: radial-gradient(black 50%, rgb(99, 46, 46));
+}
+
+.eyeball {
+    position: absolute;
+    border-radius: 50%;
+    width: 15vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+
+.pupil {
+    position: relative;
+    background-color: black;
+    border-radius: 50%;
+    width: 2vw;
+    height: 8vw;
+}
+
+.epos1 {
+    top: 18%;
+    left: 30%;
+}
+.epos2 {
+    top: 45%;
+    left: 50%;
+}
+.epos3 {
+    bottom: 30%;
+    right: 47%;
+}
+
+.ghost {
+    position: absolute;
+    border-radius: 50% 50% 0% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in;
+}
+
+.g1 {
+    top: 20%;
+    right: 20%;
+    width: 15vw;
+    height: 22vw;
+}
+
+.geye1, .gmouth1, .gmouth2, .gmouth3 {
+    position: relative;
+    background-color: black;
+}
+
+.geye1 {
+    margin: 10% 5% 0% 5%;
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+}
+
+.gmouth1 {
+    margin: 0% 5% 15% 5%;
+    border-radius: 0% 0% 50% 50%;
+    height: 2vw;
+    width: 4vw;
+}
+.gmouth2 {
+    margin: 0% 3% 10% 3%;
+    border-radius: 50% 50% 0% 0%;
+    height: 2vw;
+    width: 4vw;
+}
+.gmouth3 {
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+}
+
+.g2 {
+    top: 40%;
+    left: 20%;
+    width: 10vw;
+    height: 25vw;
+}
+
+.g3 {
+    width: 11vw;
+    height: 13vw;
+    top: 65%;
+    right: 20%;
+}
+
+.ghost:hover {
+    background-color: white;
+}
+.eyeball:hover {
+    background-color: rgb(255, 212, 157);
+}
+
+#terra {
+    width: 100vw;
+    height: 2160px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#ground, #ground-wel {
+    width: 100vw;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+#ground {
+    background: linear-gradient(green 0%, green 10%, rgb(132, 50, 50) 10%, rgb(132, 50, 50) 100%);
+}
+#ground-wel {
+    background-color: green;
+}
+
+.rock {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background-color: gray;
+    border-radius: 44% 48% 60% 73%;
+}
+
+.r1 {
+    transition: transform 2s ease-in-out;
+}
+.r2 {
+    transition: transform 5s ease-in-out;
+}
+
+.rock.r1 {
+    left: 30%;
+    bottom: 0.8%;
+    transform: rotate(33deg);
+}
+.rock.r2 {
+    right: 30%;
+    bottom: 0.2%;
+    transform: rotate(-63deg);
+}
+
+.r1:hover {
+    transform: rotate(1080deg);
+}
+.r2:hover {
+    transform: scale(3);
+}
+
+#sign {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 5%;
+    bottom: 2.35%;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-3deg);
+    transition: height 3s ease-in;
+}
+
+.sign-top {
+    position: relative;
+    width: 80%;
+    height: 30%;
+    background-color: burlywood;
+    margin-top: 20%;
+    z-index: 2;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-txt {
+    font-size: 1.5em;
+    font-weight: 550;
+    text-align: center;
+}
+
+.sign-post {
+    position: absolute;
+    background-color: burlywood;
+    z-index: 1;
+    width: 6%;
+    height: 90%;
+    bottom: 0%;
+}
+
+#sign:hover {
+    height: 5%;
+}
+
+/* TREE START HERE */
+#tree {
+    position: absolute;
+    width: 315px;
+    height: 500px;
+    right: 10%;
+    bottom: 2.35%;
+    padding: 0;
+    animation: treesway 8s ease-in-out infinite;
+}
+
+.plant {
+    position: absolute;
+    width: 37%;
+    height: 23%;
+    border-radius: 50%;
+    background-color: green;
+    box-shadow: -3px 3px rgba(0,0,0,0.2);
+    animation: plantsway 8s ease-in-out infinite;
+    transition: transform 44ms ease-in-out;
+}
+
+.plant.t-top1 {
+    top: 0;
+    left: 32%;
+    z-index: 3;
+    border: 0.5px solid black;
+}
+.plant.t-top2 {
+    top: 5%;
+    left: 22%;
+    z-index: 2;
+}
+.plant.t-top3 {
+    top: 7%;
+    left: 42%;
+    z-index: 2;
+}
+
+.plant.branch-r1 {
+    top: 29%;
+    right: 1%;
+    z-index: 3;
+    border: 0.5px solid black;
+}
+.plant.branch-r2 {
+    top: 26%;
+    right: 4%;
+    z-index: 1;
+}
+.plant.branch-r3 {
+    top: 34%;
+    right: 6%;
+    z-index: 1;
+}
+.plant.branch-l1 {
+    top: 50%;
+    left: 1%;
+    z-index: 3;
+    border: 0.5px solid black;
+}
+.plant.branch-l2 {
+    top: 45%;
+    left: 6%;
+    z-index: 2;
+}
+.plant.branch-l3 {
+    top: 55%;
+    left: 6%;
+    z-index: 2;
+}
+
+
+.trunk {
+    border: 1px solid black;
+    position: relative;
+    height: 90%;
+    width: 10%;
+    top: 10%;
+    left: 47%;
+    border-radius: 0% 89% 0% 0%;
+    background-color: brown;
+    z-index: 1;
+}
+
+.hole {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 70%;
+    height: 9%;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.branch {
+    position: absolute;
+    height: 4%;
+    width: 42%;
+    background-color: brown;
+}
+
+.branch.b-right {
+    top: 40%;
+    right: 10%;
+    border-radius: 0% 0% 92% 0%;
+    transform: rotate(-8deg);
+}
+
+
+.branch.b-left {
+    top: 60%;
+    left: 10%;
+    border-radius: 0% 0% 0% 86%;
+    transform: rotate(8deg);
+}
+
+@keyframes treesway {
+    0% {
+        transform: rotate(-2deg);
+        transform-origin: bottom center;
+    }
+
+    50% {
+        transform: rotate(2deg);
+        transform-origin: bottom center;
+    }
+    100% {
+        transform: rotate(-2deg);
+        transform-origin: bottom center;
+    }
+}
+@keyframes plantsway {
+    0% {
+        box-shadow: -3px 3px rgba(0,0,0,0.2);
+    }
+
+    50% {
+        box-shadow: 3px 3px rgba(0,0,0,0.2);
+    }
+    100% {
+        box-shadow: -3px 3px rgba(0,0,0,0.2);
+    }
+}
+
+.plant:hover {
+    transform: scale(0.92);
+}
+/* TREE ENDS HERE */
+
+/* BEANY PARTS START HERE */
+
+#beany {
+    position: absolute;
+    width: 140px;
+    height: 160px;
+    left: 40%;
+    bottom: 2.4%;
+}
+
+#beany2 {
+    position: absolute;
+    width: 140px;
+    height: 160px;
+    left: 80%;
+    top: 3.4%;
+    transform: rotate(-25deg);
+    animation: floatb 6s infinite linear;
+    z-index: 3;
+}
+
+@keyframes floatb {
+    0% {
+        transform: rotate(-25deg) translateY(0%);
+    }
+    30% {
+        transform: rotate(-25deg) translateY(3%);
+    }
+    55% {
+        transform: rotate(-25deg) translateY(0%);
+    }
+    83% {
+        transform: rotate(-25deg) translateY(-3%);
+    }
+    100% {
+        transform: rotate(-25deg) translateY(0%);
+    }
+}
+
+
+
+.body {
+    background-color: lightgreen;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 30%;
+    left: 15%;
+    top: 5%;
+    z-index: 1;
+}
+
+.body:hover {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: rainbow 0.6s linear infinite;
+}
+@keyframes rainbow {
+    to {
+      background-position: 10vw;
+    }
+  }
+
+.b2 {
+    background: linear-gradient(to top right, lightgreen 40%, rgb(111, 182, 111));
+}
+
+.eye {
+    border-radius: 50%;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+}
+
+.l-inner, .r-inner {
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 3;
+    top: 3%;
+    right: 7%;
+}
+.li2, .ri2 {
+    left: 7%;
+    top: 14%;
+}
+
+.leye {
+    top: 10%;
+    left: 5%;
+}
+.reye {
+    top: 10%;
+    right: 6%;
+}
+
+.mouth {
+    background-color: black;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    bottom: 15%;
+    left: 10%;
+    border-radius: 30% 0% 0% 30%;
+}
+.mouth2 {
+    background-color: black;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 15%;
+    left: 30%;
+    border-radius: 50%;
+}
+
+.l-leg, .r-leg {
+    background-color: black;
+    position: absolute;
+    width: 10px;
+    height: 45px;
+    bottom: 1%;
+    border-radius: 30%;
+    z-index: 0;
+}
+
+.l-leg {
+    left: 30%;
+}
+.ll2 {
+    left: 35%;
+    transform: rotate(15deg);
+}
+.r-leg {
+    left: 55%;
+}
+.rl2 {
+    left: 52%;
+    transform: rotate(15deg);
+}
+
+.l-arm, .r-arm {
+    background-color: black;
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    border-radius: 30% 0% 0% 30%;
+    top: 55%;
+    z-index: 0;
+}
+.r-arm {
+    left: 78%;
+    transform: rotate(45deg);
+}
+.ra2 {
+    top: 40%;
+    transform: rotate(-45deg);
+}
+.l-arm {
+    transform: rotate(-45deg);
+}
+.la2 {
+    top: 40%;
+    transform: rotate(45deg);
+}
+
+/* BEANY ENDS HERE */
+#sun {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 1;
+    top: 6390px;
+    right: -60px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 30px white;
+    transition: all 2s linear;
+}
+
+#sun:hover {
+    transform: scale(0.5);
+    background-color: white;
+    box-shadow: 0px 0px 30px yellow;
+}
+
+.sky {
+    width: 100vw;
+    height: 90%;
+    z-index: 0;
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    background: linear-gradient(45deg, skyblue 0%, skyblue 60%, rgb(240, 240, 141));
+    margin: 0;
+    padding: 0;
+}
+
+.cloud { 
+    position: relative;
+    width: 35vw;
+    height: 12.5vw;
+    background:#ECEFF1;
+    box-shadow: -10px 10px rgba(0,0,0,0.2);
+    border-radius: 100px;
+    margin: 10% 5% 5% 5%;
+    z-index: 3;
+ }
+
+ .cloud:has(.lft) {
+    animation: cloudpass 20s infinite ease-in;
+ }
+ .cloud:has(.up) {
+    animation: cloudpass1 15s infinite ease-in;
+    margin-bottom: auto3;
+ }
+ .cloud:has(.dwn) {
+    animation: cloudpass2 17s infinite ease-in;
+ }
+
+ .cloud-inner {
+    position: relative;
+    width: 60%;
+    height: 40%;
+    background:#ECEFF1;
+    box-shadow: -10px 10px rgba(0,0,0,0.2);
+    border-radius: 100px;
+ }
+
+ .cloud-inner.up {
+    top: 10%;
+    left: 30%;
+ }
+
+ .cloud-inner.lft {
+    top: 20%;
+    left: 10%;
+ }
+
+ .cloud-inner.dwn {
+    top: 40%;
+    left: 35%;
+ }
+
+ .cloud.rght {
+    margin-left: auto;
+    margin-right: 10%;
+    bottom: 15%;
+ }
+
+ @keyframes cloudpass {
+    from {
+        transform: translateX(-50vw);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+ }
+ @keyframes cloudpass1 {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(50vw);
+    }
+ }
+ @keyframes cloudpass2 {
+    from {
+        transform: translateX(-50vw);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+ }
+
+ .cloud, .cloud-inner {
+    transition: all 1s ease-in;
+ }
+
+ .cloud-inner:hover {
+    transform: scale(1.2);
+    background-color: pink;
+ }
+ .cloud:hover {
+    width: 50vw;
+    opacity: 70%;
+    background-color: rgb(241, 100, 241);
+ }
+
+ /* ARIPLANE STARTS HERE */
+ #airplane {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    left: 20%;
+    bottom: 35%;
+    transition: transform 1s ease-in-out;
+ }
+ .fusilage {
+    border: 0.1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 28%;
+    left: 4%;
+    border-radius: 100% 40% 100% 50%;
+    z-index: 1;
+ }
+ .fin {
+    position: absolute;
+    width: 15%;
+    height: 35%;
+    right: 7%;
+    top: 4%;
+    border-radius: 100% 10% 0% 0%;
+    z-index: 1;
+ }
+ .fusilage, .fin {
+    background-color: rgb(232, 214, 214);
+ }
+ .wing-f {
+    position: absolute;
+    height: 52%;
+    width: 48%;
+    top: 42%;
+    left: 32%;
+    transform: rotateX(70deg) rotate(80deg);
+    border-radius: 0% 20% 100% 0%;
+    z-index: 2;
+ }
+ .wing-b {
+    position: absolute;
+    height: 50%;
+    width: 48%;
+    top: 3%;
+    left: 24%;
+    transform: rotateX(70deg) rotate(261deg);
+    border-radius: 0% 100% 20% 0%;
+    z-index: 0;
+ }
+ .wing-f, .wing-b {
+    background-color: rgb(222, 204, 204);
+ }
+ .cp-win {    
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 40%;
+    border-radius: 0% 15% 15% 0%;
+    z-index: 2;
+ }
+ .p-win {
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    border-radius: 50%;
+    z-index: 2;
+ }
+ .w-one {
+    top: 33%;
+    left: 30%;
+ }
+ .w-two {
+    top: 30%;
+    left: 40%;
+ }
+ .w-three {
+    top: 26%;
+    left: 50%;
+ }
+ .w-four {
+    top: 23%;
+    left: 60%;
+ }
+ .w-five {
+    top: 21%;
+    left: 70%;
+ }
+.cp-win, .p-win {
+    background-color: lightblue;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+#airplane:hover {
+    transform: rotate(2160deg);
+}
+/* PLANE ENDS HERE */
+
+/*UFO*/
+#ufo {
+    position: absolute;
+    width: 45%;
+    height: 3%;
+    left: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 4s linear;
+}
+.ufo-win {
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px yellow;
+}
+.ufo-dt {
+    width: 15%;
+    height: 15%;
+    left: 42%;
+    top: 16%;
+    border-radius: 50% 50% 0% 0%;
+}
+.ufo-db {
+    width: 15%;
+    height: 15%;
+    left: 42%;
+    top: 69%;
+    border-radius: 0% 0% 50% 50%;
+}
+.ufo-dt, .ufo-db {
+    border: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 0;
+    background-color: yellowgreen;
+    box-shadow: 0px 0px 30px yellow;
+}
+.ufo-bt {
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 30%;
+    border-radius: 50% 50% 0% 0%;
+}
+.ufo-bb {
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 50%;
+    border-radius: 0% 0% 50% 50%;
+}
+.ufo-bt, .ufo-bb {
+    background-color: silver;
+    border: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+}
+.ufo-win {
+    background-color: yellowgreen;
+}
+
+#ufo:hover {
+    animation: jerkfly 3s linear;
+}
+
+@keyframes jerkfly {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(20%);
+    }
+    40% {
+        transform: translateX(-90%);
+    }
+    60% {
+        transform: translateX(100%);
+    }
+    80% {
+        transform: translateX(80%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+/*UFO END*/
+
+#strato {
+    width: 100vw;
+    height: 2160px;
+    z-index: 0;
+    background: linear-gradient(135deg, skyblue 0%, skyblue 60%, rgb(240, 240, 141));
+    margin: 0;
+    padding: 0;
+}
+
+#orbit {
+    width: 100vw;
+    height: 2160px;
+    background: linear-gradient(black 0%, black 75%, skyblue);
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+/*SATELITE*/
+
+#satelite {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    bottom: 57%;
+    z-index: 3;
+    transform: rotate(25deg);
+    animation: float 6s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(25deg) translateY(0%);
+    }
+    30% {
+        transform: rotate(25deg) translateY(2%);
+    }
+    55% {
+        transform: rotate(25deg) translateY(0%);
+    }
+    83% {
+        transform: rotate(25deg) translateY(-2%);
+    }
+    100% {
+        transform: rotate(25deg) translateY(0%);
+    }
+}
+
+.solar-left, .solar-right {
+    background-color: rgb(39, 57, 106);
+    border: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 40%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.s-panel {
+    position: relative;
+    border: 1px solid silver;
+}
+.solar-left {
+    left: 7%;
+}
+.solar-right {
+    left: 63%;
+}
+
+.solar-left, .solar-right {
+    transition: all 2s ease-in-out;
+}
+
+.solar-left:hover {
+    transform: rotateX(40deg);
+}
+.solar-right:hover {
+    transform: rotateX(-50deg);
+}
+
+.solar-lc, .solar-rc {
+    background-color: silver;
+    border: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    height: 2%;
+    width: 3.5%;
+    top: 50%;
+}
+.solar-lc {
+    left: 36.5%;
+}
+.solar-rc {
+    left: 60%;
+}
+.s-body {
+    position: absolute;
+    background-color: rgb(174, 155, 48);
+    width: 20%;
+    height: 20%;
+    top: 40%;
+    left: 40%;
+}
+.s-circ {
+    position: absolute;
+    background-color: blueviolet; 
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    top: 15%;
+    left: 20%;
+    box-shadow: 0px 0px 30px rgb(76, 52, 183);
+    transition: all 1s;
+}
+
+.s-circ:hover {
+    background-color: greenyellow;
+    box-shadow: 0px 0px 30px rgb(238, 252, 217);
+}
+
+.s-square {
+    position: absolute;
+    background-color: silver; 
+    width: 25%;
+    height: 25%;
+    top: 45%;
+    left: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.7s linear;
+}
+
+.s-square:hover {
+    background-color: #e12626;
+    transform: rotate(45deg);
+}
+
+/*SATELITE ENDS*/
+
+/* STARS */
+
+.starfield {
+    position: absolute;
+    width: 100vw;
+    height: 1800px;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    padding-top: 20px;
+}
+
+.star {
+    position: relative;
+    color: white;
+    font-size: 1em;
+    text-shadow: 0px 0px 20px #fff;
+    cursor: default;
+    transition: all 0.5s ease-in-out;
+}
+
+.star:hover {
+    font-size: 2em;
+}
+
+.s-tilt-r {
+    transform: rotate(22deg);
+}
+.s-tilt-l {
+    transform: rotate(-12deg);
+}
+.s-op-d {
+    opacity: 60%;
+}
+.s-op.rd {
+    opacity: 30%;
+}
+
+/* STARS END HERE */
+
+/* MOON */
+#moon {
+    background-color: gray;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    top: 1700px;
+    right: 5%;
+    z-index: 5;
+    box-shadow: 0px 0px 60px white;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: 5% 0% 0% 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(37deg);
+    transition: all 3s ease-in;
+}
+
+#moon:hover {
+    transform: scale(1.4);
+    background-color: #FC4F4F;
+    box-shadow: 0px 0px 60px rgb(235, 168, 92);
+}
+
+.crater {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: rgb(87, 85, 85);
+    margin: 5%;
+    box-shadow: -6px -3px rgba(0,0,0,0.2);
+}
+.c-mod1 {
+    margin: 0% 10% 0% 0%;
+    transform: rotateY(33deg);
+}
+.c-mod2 {
+    top: 3%;
+    left: 5%;
+    width: 8%;
+    height: 8%;
+    transform: rotateY(22deg);
+}
+.c-mod3 {
+    margin: 0% 0% 0% 10%;
+    height: 15%;
+    width: 15%;
+    transform: rotateX(24deg);
+}
+.c-mod4 {
+    height: 18%;
+    width: 18%;
+    margin: 15%;
+    transform: rotateX(13deg);
+}
+.c-mod5 {
+    width: 3%;
+    height: 3%;
+    margin: 5%;
+    transform: rotateY(32deg);
+}
+.c-mod6 {
+    width: 22%;
+    height: 22%;
+    margin: 10%;
+    transform: rotateY(12deg);
+}
+/*MOON END*/
+
+#deep-space {
+    width: 100vw;
+    height: 2160px;
+    background: linear-gradient(rgb(68, 4, 68) 0%, rgb(68, 4, 68) 2%, black);
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.starfield2 {
+    position: absolute;
+    width: 100vw;
+    height: 2000px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+/* MARS */
+#mars {
+    position: absolute;
+    border: 1px solid rgba(0,0,0,0.2);
+    /*background-color: rgb(227, 105, 105);*/
+    background-image: radial-gradient(at 60% 60%,rgb(227, 105, 105) 35%, red);
+    box-shadow: 0px 0px 30px rgb(222, 98, 98);
+    top: -75px;
+    left: -75px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 30s linear;
+}
+.tex1, .tex2 {
+    position: relative;
+    border: 18px solid brown;
+    background-color: rgba(165, 63, 63, 0.8);
+    width: 47%;
+    height: 72%;
+    border-radius: 38% 50% 26% 32%;
+    box-shadow: 0px 0px 30px rgb(173, 65, 65);
+    opacity: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+}
+.tex1 {
+    top: 10%;
+    left: 60%;
+    transform: rotate(33deg);
+}
+.tex2 {
+    bottom: 60%;
+    right: 30%;
+    transform: rotate(90deg);
+}
+
+.innertex {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(123, 53, 53, 1);
+    width: 70%;
+    height: 70%;
+    border-radius: 38% 50% 26% 32%;
+    opacity: 40%;
+    transform: rotate(10deg);
+    z-index: 4;
+}
+
+#mars:hover {
+    transform: rotate(2160deg);
+}
+
+#phobos {
+    position: absolute;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-image: radial-gradient(at 60% 60%, rgb(208, 143, 82), rgb(171, 112, 57));
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.4);
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 40% 50% 46%;
+    left: 200px;
+    top: 200px;
+    z-index: 1;
+    /*transform: rotate(85deg);*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    animation: orbit 12s infinite linear;
+}
+
+#deimos {
+    position: absolute;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: gray;
+    background-image: radial-gradient(at 0% 0%, rgb(156, 154, 154), rgb(73, 73, 73));
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.4);
+    width: 200px;
+    height: 200px;
+    border-radius: 37% 40% 50% 26%;
+    left: 200px;
+    top: 200px;
+    z-index: 5;
+    transform: rotate(-35deg);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    animation: orbit 16s infinite linear;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateY(500px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateY(500px) rotate(-360deg);
+    } 
+}
+/* Borrowing craters from #moon element */
+.ope {
+    opacity: 60%;
+}
+
+/* MARS ENDS HERE */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+    #mars {
+        width: 70vw;
+        height: 70vw;
+    }
+    #phobos {
+        left: 65%;
+        top: 8%;
+        width: 15vw;
+        height: 15vw;
+    }
+    #deimos {
+        top: 15%;
+        left: 42%;
+        width: 25vw;
+        height: 25vw;
+    }
+    #beany {
+        left: 35%;
+    }
+    #beany2 {
+        top: 30%;
+        left: 40vw;
+        transform: rotate(45deg);
+    }
+    #moon {
+        width: 55vw;
+        height: 55vw;
+        margin-top: 10%;
+    }
+    #satelite {
+        width: 55vw;
+        height: 55vw;
+        margin-left: 5%;
+    }
+    #ufo {
+        width: 80vw;
+        height: 30vh;
+        left: 20%;
+    }
+    #airplane {
+        left: 10%;
+        width: 70vw;
+        height: 30.625vw;
+    }
+    .blank {
+        width: 5vw;
+    }
+    .cloud {
+        margin: 10%;
+        width: 45vw;
+        height: 17.5vw
+    }
+    #tree {
+        width: 50vw;
+        height: 80vw;
+        left: 60%;
+    }
+    #sign {
+        left: 5%;
+        width: 25vw;
+        height: 30vw;
+    }
+    #sign-txt {
+        font-size: 0.7em;
+        margin: 5%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .cloud {
+        width: 450px;
+        height: 150px;
+    }
+}
