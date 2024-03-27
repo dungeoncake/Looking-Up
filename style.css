@@ -32,8 +32,9 @@
 }
 
 #welcometxt {
+    width: 15vw;
     position: relative;
-    margin: 25% 0% 0% 20%;
+    margin: 25% 0% 0% 30%;
     font-size: 6rem;
     color: antiquewhite;
     transition: color 0.3s ease-in-out;
@@ -1384,6 +1385,12 @@ a {
     #sign-txt {
         font-size: 0.7em;
         margin: 5%;
+    }
+    #welcometxt {
+        font-size: 2em;
+        height: auto;
+        width: 20vw;
+       top: 25%;
     }
 }
 
